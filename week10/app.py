@@ -7,6 +7,7 @@ loaded_threshold = data["threshold"]
 st.title("Bank Marketing Prediction")
 col1,col2 = st.columns(2)
 with col1:
+ st.title("Bank Marketing Prediction")
  
  age = st.number_input("سن مشتری", min_value=18, max_value=100, value=30)
  balance = st.number_input("موجودی حساب مشتری", value=2000)
