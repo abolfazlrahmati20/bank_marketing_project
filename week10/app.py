@@ -4,10 +4,9 @@ import joblib
 data =joblib.load("week10/final_model.pkl")
 loaded_model = data["model"]
 loaded_threshold = data["threshold"]
+st.title("Bank Marketing Prediction")
 col1,col2 = st.columns(2)
 with col1:
- st.title("Bank Marketing Prediction")
- 
  age = st.number_input("سن مشتری", min_value=18, max_value=100, value=30)
  balance = st.number_input("موجودی حساب مشتری", value=2000)
  day = st.number_input("روز اخرین تماس در ماه", min_value=1, max_value=31, value=15)
