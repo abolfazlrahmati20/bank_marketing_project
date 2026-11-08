@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import joblib
-data =joblib.load("week10/final_model.pkl")
+data =joblib.load("final_model.pkl")
 loaded_model = data["model"]
 loaded_threshold = data["threshold"]
 st.title("Bank Marketing Prediction")
